@@ -2,7 +2,7 @@ package com.expitly.webservice.service;
 
 import com.expitly.webservice.domain.posts.Posts;
 import com.expitly.webservice.domain.posts.PostsRepository;
-import com.expitly.webservice.dto.PostsSaveRequestDto;
+import com.expitly.webservice.dto.posts.PostsSaveRequestDto;
 import org.junit.*;
 import org.junit.runner.*;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,6 +1,6 @@
 package com.expitly.webservice.web;
 
-import com.expitly.webservice.dto.PostsSaveRequestDto;
+import com.expitly.webservice.dto.posts.PostsSaveRequestDto;
 import com.expitly.webservice.service.PostsService;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;

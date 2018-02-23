@@ -1,8 +1,8 @@
 package com.expitly.webservice.service;
 
 import com.expitly.webservice.domain.posts.PostsRepository;
-import com.expitly.webservice.dto.PostsMainResponseDto;
-import com.expitly.webservice.dto.PostsSaveRequestDto;
+import com.expitly.webservice.dto.posts.PostsMainResponseDto;
+import com.expitly.webservice.dto.posts.PostsSaveRequestDto;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

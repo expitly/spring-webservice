@@ -1,4 +1,4 @@
-package com.expitly.webservice.dto;
+package com.expitly.webservice.dto.posts;
 
 import com.expitly.webservice.domain.posts.Posts;
 import lombok.Builder;
