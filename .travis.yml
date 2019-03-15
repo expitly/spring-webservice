@@ -30,7 +30,7 @@ deploy:
     local_dir: deploy
     wait-until-deployed: true
     on:
-      repo: expitly/spring-webservice
+      repo: expitly/toy
       branch: master
 
   - provider: codedeploy
@@ -44,7 +44,7 @@ deploy:
     region: ap-northeast-2
     wait-until-deployed: true
     on:
-    repo: expitly/spring-webservice
+    repo: expitly/toy
     branch: master
 
 notifications:

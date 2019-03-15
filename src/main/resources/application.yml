@@ -3,7 +3,7 @@ spring:
     url:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username:
-    password: 
+    password:
   jpa:
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
     properties:

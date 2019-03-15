@@ -1,5 +1,7 @@
 ## Toy
 
+[![Build Status](https://travis-ci.org/expitly/spring-webservice.svg?branch=master)](https://travis-ci.org/expitly/spring-webservice)
+
 - H2 -> MySQL로 변경
   - AWS RDS를 쓸 것이기 때문
 - JPA, JOOQ 사용
