@@ -46,15 +46,15 @@ public class PostsRepositoryTest {
     public void BaseTimeEntity_등록(){
         LocalDateTime now = LocalDateTime.now();
         postsRepository.save(Posts.builder()
-                .title("테스트 게시글2")
-                .content("테스트 본문2")
-                .author("작성자2")
+                .title("adsf")
+                .content("asdff")
+                .author("개나리")
                 .build());
 
         List<Posts> postsList = postsRepository.findAll();
 
         Posts posts = postsList.get(0);
-        assertTrue(posts.getCreatedDate().isAfter(now));
-        assertTrue(posts.getModifiedDate().isAfter(now));
+        assertTrue(posts.getCreatedDate().isBefore(now));
+        assertTrue(posts.getModifiedDate().isBefore(now));
     }
 }
