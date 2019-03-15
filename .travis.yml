@@ -15,15 +15,15 @@ cache:
 script: "./gradlew clean build"
 
 before_deploy:
-  - zip -r springboot-webservice *
+  - zip -r toy *
   - mkdir -p deploy
-  - mv springboot-webservice.zip deploy/springboot-webservice.zip
+  - mv toy.zip deploy/toy.zip
 
 deploy:
   - provider: s3
     access_key_id: $AWS_ACCESS_KEY
     secret_access_key: $AWS_SECRET_KEY
-    bucket: expitly-deploy
+    bucket: toy-deploy
     region: ap-northeast-2
     skip_cleanup: true
     acl: public_read
@@ -36,11 +36,11 @@ deploy:
   - provider: codedeploy
     access_key_id: $AWS_ACCESS_KEY
     secret_access_key: $AWS_SECRET_KEY
-    bucket: expitly-deploy
-    key: springboot-webservice.zip
+    bucket: toy-deploy
+    key: toy.zip
     bundle_type: zip
-    application: springboot-webservice
-    deployment_group: springboot-webservice-group
+    application: toy
+    deployment_group: toy-group
     region: ap-northeast-2
     wait-until-deployed: true
     on:
