@@ -1,25 +1,21 @@
-#spring:
-#  datasource:
-#    url:
-#    driver-class-name: com.mysql.cj.jdbc.Driver
-#    username:
-#    password:
-#  jpa:
-#    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
-#    properties:
-#      hibernate:
-#        id:
-#          new_generator_mappings: false
-#        format_sql: true
-#    generate-ddl: true
-#    show-sql: true
-#
-#logging:
-#  level:
-#    org:
-#      hibernate:
-#        SQL=DEBUG:
+spring:
+  datasource:
+    url: ${DB_HOST}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    properties:
+      hibernate:
+        id:
+          new_generator_mappings: false
+        format_sql: true
+    generate-ddl: true
+    show-sql: true
 
-h2:
-  console:
-    enabled: true
+logging:
+  level:
+    org:
+      hibernate:
+        SQL=DEBUG:
