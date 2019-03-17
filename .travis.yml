@@ -32,20 +32,20 @@ deploy:
     on:
       repo: expitly/toy
       branch: master
-
-  - provider: codedeploy
-    access_key_id: $AWS_ACCESS_KEY
-    secret_access_key: $AWS_SECRET_KEY
-    bucket: toy-deploy
-    key: toy.zip
-    bundle_type: zip
-    application: toy
-    deployment_group: toy-group
-    region: ap-northeast-2
-    wait-until-deployed: true
-    on:
-    repo: expitly/toy
-    branch: master
+#
+#  - provider: codedeploy
+#    access_key_id: $AWS_ACCESS_KEY
+#    secret_access_key: $AWS_SECRET_KEY
+#    bucket: toy-deploy
+#    key: toy.zip
+#    bundle_type: zip
+#    application: toy
+#    deployment_group: toy-group
+#    region: ap-northeast-2
+#    wait-until-deployed: true
+#    on:
+#    repo: expitly/toy
+#    branch: master
 
 notifications:
   email:
