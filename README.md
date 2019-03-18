@@ -36,6 +36,9 @@
     - SpringBoot 2.0 : spring.jpa.properties.hibernate.id.new_generator_mappings = true
   - 해결 : new_generator_mappings = false 로 설정 추가
 
+- OSIV 관련 정리
+  - SpringBoot의 경우, spring.jpa.open-in-view 설정이 default true로 되어있어 기존의 LazyInitialization관련 이슈가 발생되지 않음.
+  - 트랜잭션(@Transactional)을 벗어난 범위 ex) Controller의 경우, FlushMode = MANUAL로 유지하여 Controller단에서 Entity의 값을 변경시켰다 하더라도 명시적으로 flush하지 않으면 DB에 저장되지 않기때문에 예상치못한 결과를 방지 할 수 있음.
 
 
 ### To Do

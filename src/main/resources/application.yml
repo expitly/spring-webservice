@@ -13,9 +13,11 @@ spring:
         format_sql: true
     generate-ddl: true
     show-sql: true
+    open-in-view: true
 
 logging:
   level:
     org:
       hibernate:
-        SQL=DEBUG:
+        type: true
+        SQL: DEBUG
