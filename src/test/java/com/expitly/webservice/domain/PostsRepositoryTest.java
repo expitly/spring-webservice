@@ -23,6 +23,11 @@ public class PostsRepositoryTest {
     @Autowired
     PostsRepository postsRepository;
 
+    @Before
+    public void setUp(){
+        postsRepository.deleteAll();
+    }
+
     @After
     public void cleanup(){
         postsRepository.deleteAll();

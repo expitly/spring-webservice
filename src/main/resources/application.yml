@@ -1,11 +1,8 @@
 spring:
   datasource:
-    url: ${DB_HOST}
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    username: ${DB_USERNAME}
-    password: ${DB_PASSWORD}
+    driver-class-name: org.h2.Driver
   jpa:
-    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    database-platform: org.hibernate.dialect.H2Dialect
     properties:
       hibernate:
         id:
@@ -14,10 +11,6 @@ spring:
     generate-ddl: true
     show-sql: true
     open-in-view: true
-
-logging:
-  level:
-    org:
-      hibernate:
-        type: true
-        SQL: DEBUG
+  h2:
+    console:
+      enabled: true

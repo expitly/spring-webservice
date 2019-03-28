@@ -18,7 +18,7 @@ public class PostsMainResponseDto {
         id = entity.getId();
         title = entity.getTitle();
         author = entity.getAuthor();
-        modifiedDate = toStringDateTime(entity.getModifiedDate());
+//        modifiedDate = toStringDateTime(entity.getModifiedDate());
     }
 
     private String toStringDateTime(LocalDateTime localDateTime){

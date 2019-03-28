@@ -7,3 +7,11 @@ logging:
     org:
       hibernate:
         type: true
+
+spring:
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        id:
+          new_generator_mappings: false

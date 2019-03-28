@@ -7,10 +7,8 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
-@Setter
 @NoArgsConstructor
 public class PostsSaveRequestDto {
-
     private String title;
     private String content;
     private String author;
